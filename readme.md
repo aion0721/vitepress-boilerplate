@@ -21,7 +21,7 @@
 プロジェクトのクローンと依存関係のインストールを行います：
 
 ```bash
-git clone https://github.com/aion0721/vitepress-voilerplate
+git clone https://github.com/aion0721/vitepress-boilerplate
 cd vuepress-boilerplate
 yarn
 ```
