@@ -33,5 +33,6 @@ export default defineConfig({
       message: "me",
       copyright: "Copyright",
     },
+    outline: "deep",
   },
 });
