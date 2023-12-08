@@ -46,6 +46,57 @@ yarn docs:build
 
 ビルドされたファイルは `docs/.vuepress/dist` ディレクトリに格納されます。
 
+## 注意事項
+
+ページを足した場合は、sidebar 定義を修正する必要があります。
+
+### カテゴリを追加した場合
+
+guide, practice のようにディレクトリを追加した場合は以下修正が必要です。
+
+```js:/docs/.vitepress/config.js
+    nav: [
+      { text: "Guide", link: "/guide/" },
+      { text: "Practice", link: "/practice/" },
+    ],
+    sidebar: {
+      "/": [
+        {
+          text: "guide",
+          items: [{ text: "Top", link: "/guide/" }],
+        },
+        {
+          text: "practice",
+          items: [{ text: "Top", link: "/practice/" }],
+        },
+      ],
+    },
+```
+
+nav と sidebar の定義を追記してあげてください。
+こうすることで、右上のナビゲーションと、左のサイドバーに追加されます。
+
+### ページを追加した場合
+
+ディレクトリ配下にページを追加した場合は以下に追加してあげてください。
+
+```js:/docs/.vitepress/config.js
+    sidebar: {
+      "/": [
+        {
+          text: "guide",
+          items: [{ text: "Top", link: "/guide/" }],
+        },
+        {
+          text: "practice",
+          items: [{ text: "Top", link: "/practice/" }],
+        },
+      ],
+    },
+```
+
+こうすることで左側のサイドバーに追加されます。
+
 ## 貢献
 
 プロジェクトへの貢献に興味がある場合は、プルリクエストやイシューをお気軽にお寄せください。
