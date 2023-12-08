@@ -1,6 +1,5 @@
 ---
 layout: home
-
 hero:
   name: VitePress-BoilerPlate
   text: VitePress BoilerPlate
