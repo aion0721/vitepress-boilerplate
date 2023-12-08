@@ -11,5 +11,17 @@ export default defineConfig({
     search: {
       provider: "local",
     },
+    sidebar: {
+      "/": [
+        {
+          text: "guide",
+          items: [{ text: "Top", link: "/guide/" }],
+        },
+        {
+          text: "practice",
+          items: [{ text: "Top", link: "/practice/" }],
+        },
+      ],
+    },
   },
 });
