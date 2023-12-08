@@ -11,4 +11,8 @@ hero:
     - theme: brand
       text: Get Started→
       link: /guide/
+features:
+  - icon: 💨
+    title: fast
+    details: faster
 ---
