@@ -29,5 +29,9 @@ export default defineConfig({
       provider: "local",
     },
     lastUpdated: "true",
+    footer: {
+      message: "me",
+      copyright: "Copyright",
+    },
   },
 });

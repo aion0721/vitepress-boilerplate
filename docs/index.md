@@ -3,12 +3,12 @@ layout: home
 hero:
   name: VitePress-BoilerPlate
   text: VitePress BoilerPlate
-  tagline: vite
+  tagline: this is fastest vuepress boilerplate
+  image:
+    src: /logo.png
+    alt: logo
   actions:
     - theme: brand
-      text: Get Started
+      text: Get Started→
       link: /guide/
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/vuejs/vitepress
 ---
