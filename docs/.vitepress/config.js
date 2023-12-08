@@ -24,8 +24,10 @@ export default defineConfig({
         },
       ],
     },
+    logo: "/logo.png",
     search: {
       provider: "local",
     },
+    lastUpdated: "true",
   },
 });
