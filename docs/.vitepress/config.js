@@ -8,9 +8,10 @@ export default defineConfig({
   base: "/vitepress-boilerplate/",
 
   themeConfig: {
-    search: {
-      provider: "local",
-    },
+    nav: [
+      { text: "Guide", link: "/guide/" },
+      { text: "Practice", link: "/practice/" },
+    ],
     sidebar: {
       "/": [
         {
@@ -22,6 +23,9 @@ export default defineConfig({
           items: [{ text: "Top", link: "/practice/" }],
         },
       ],
+    },
+    search: {
+      provider: "local",
     },
   },
 });
